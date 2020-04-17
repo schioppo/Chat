@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="Chat" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="67U-4f-366" id="UVh-gd-wh5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67U-4f-366" customClass="CLTypingLabel" customModule="CLTypingLabel">
+                    <rect key="frame" x="100" y="144" width="214" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfO-l4-Di2">
+                    <rect key="frame" x="10" y="334" width="394" height="48"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Register"/>
+                    <connections>
+                        <action selector="registerButtonTouchUp:" destination="-1" eventType="touchUpInside" id="hvy-gO-8I6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUQ-Td-Al0">
+                    <rect key="frame" x="10" y="387" width="394" height="48"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <state key="normal" title="Login"/>
+                    <connections>
+                        <action selector="loginButtonTouchUp:" destination="-1" eventType="touchUpInside" id="mZD-Bn-Lkx"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mfO-l4-Di2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="9LR-EH-9mp"/>
+                <constraint firstItem="67U-4f-366" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="BIp-em-qw3"/>
+                <constraint firstItem="mfO-l4-Di2" firstAttribute="top" secondItem="67U-4f-366" secondAttribute="bottom" constant="130" id="ViE-ON-Zd2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mfO-l4-Di2" secondAttribute="trailing" constant="10" id="dMO-E4-CeC"/>
+                <constraint firstItem="mUQ-Td-Al0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="gAn-0O-vSX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="67U-4f-366" secondAttribute="trailing" constant="100" id="mh0-GY-uhv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mUQ-Td-Al0" secondAttribute="trailing" constant="10" id="ojB-9c-SXa"/>
+                <constraint firstItem="mUQ-Td-Al0" firstAttribute="top" secondItem="mfO-l4-Di2" secondAttribute="bottom" constant="5" id="tfU-vh-OLc"/>
+                <constraint firstItem="67U-4f-366" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="wtL-yE-sGc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="130"/>
+        </view>
+    </objects>
+</document>
